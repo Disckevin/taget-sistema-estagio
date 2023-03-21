@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Sistemas - Estágio</title>
+  <script src="./main.js"></script>
+  <link rel="shortcut icon" href="/icon/icon-TG.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/questao2.css">
+  <link rel="stylesheet" href="./css/questao3.css">
+  <link rel="stylesheet" href="./css/questao4.css">
+  <link rel="stylesheet" href="./css/questao5.css">
+  <link rel="stylesheet" href="./css/foooter.css">
+</head>
+
+  <body>
+    <header class="cabecalho">
+      <a href="https://targetsistemas.com.br/" target="_blank"><img class="logo" src="./assets/logo.svg" alt="Logo da empresa Target Sistemas "/></a>
+      <div>
+        <p>
+        Kevin Bazilio Ferreira <br>
+        Análise e Desenvolvimento de Sistemas<br>
+        disckevinbf@gmail.com
+      </p>
+      <img src="./assets/kevin-img.svg" alt="Foto de kevin">
+      </div>
+    </header>
+    
+    <section class="banner">
+      <h2 class="banner__texto">Estágio Análise e Desenvolvimento <br> <span class="banner__texto__2">Ribeirão Preto<span></h2>
+    </section>
+
+    <section class="sobre">
+      <h3 class="sobre__titulo">Kevin Bazilio Ferreira</h3>
+      <p class="sobre__descricao">
+        Respostas do processo seletivo para vaga de estagiário <br>
+        em Análise e Desenvolvimento de Sistemas.
+      </p>
+    </section>
+
+    <main>    
+      <section class="questao-01">    
+        <div class="pergunta01">         
+          <h2 class="pergunta01__titulo">QUESTÃO 01</h2>
+          <p class="pergunta01__texto">
+            <strong>Observe o trecho de código abaixo:</strong><br><br>
+            int INDICE = 13, SOMA = 0, K = 0&#59; <br>
+            enquanto K &lt; INDICE faça <br>
+            &#123;<br>
+              K = K + 1&#59;<br>
+              SOMA = SOMA + K&#59;<br>
+            &#125; <br>
+            imprimir(SOMA)&#59; <br><br>
+            Ao final do processamento, qual será o<br>
+            valor da variável SOMA ?
+          </p>  
+        </div>
+
+        <img class="separador1" src="./assets/Line-1.svg" alt="separador">
+  
+         <div class="resposta01">            
+          <h2 class="resposta01__titulo">RESPOSTA</h2>
+          <div class="resposta01__final" id="resposta1"></div>  
+          <button class="btn-1" onclick="quest01()">Clique aqui</button>                   
+        </div>
+      </section>
+
+      <section class="questao-02">    
+        <div class="pergunta02">           
+          <h2 class="pergunta02__titulo">Questão 02</h2>              
+          <p class="pergunta02__texto">
+            Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o <br>
+            próximo valor sempre será a soma dos 2 valores anteriores<br>
+            (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...).<br><br>
+            Escreva um programa na linguagem que desejar onde,<br>
+            informado um número, ele calcule a sequência de<br>
+            Fibonacci e retorne uma mensagem avisando se o número<br>
+            informado pertence ou não a sequência.<br><br>
+            <strong>IMPORTANTE:</strong><br>
+            Esse número pode ser informado através de qualquer<br>
+            entrada de sua preferência ou pode ser previamente<br>
+            definido no código;
+          </p>
+            
+        </div>
+
+        <img class="separador2" src="./assets/Line-1.svg" alt="separador">
+  
+         <div class="resposta02">            
+          <h2 class="resposta02__titulo">Resposta</h2>
+          <p class="resposta02__final">Informe um número e descubra se faz parte da sequência de fibonacci:</p>
+          <input class="caixa" id="numero" type="number">
+          <button class="btn-2" onclick="quest02()">Exibir</button><br/>
+          <div class="resposta2" id='resposta2'></div>             
+        </div>
+      </section>
+
+      <section class="questao-03">    
+        <div class="pergunta03">               
+          <h2 class="pergunta03__titulo">Questão 03</h2>              
+          <p class="pergunta03__texto">
+            Descubra a lógica e complete o próximo<br>
+            elemento:<br><br> 
+            a&#41; 1, 3, 5, 7, ___ <br>
+            b&#41; 2, 4, 8, 16, 32, 64, ____ <br>
+            c&#41; 0, 1, 4, 9, 16, 25, 36, ____ <br>
+            d&#41; 4, 16, 36, 64, ____<br>
+            e&#41; 1, 1, 2, 3, 5, 8, ____<br>
+            f&#41; 2,10, 12, 16, 17, 18, 19, ____<br>
+          </p>            
+        </div>
+
+        <img class="separador3" src="./assets/Line-1.svg" alt="separador">
+  
+         <div class="resposta03">  
+          <h2 class="resposta03__titulo">RESPOSTA</h2>
+          <p class="resposta03__final">
+            a&#41; 1, 3, 5, 7, <strong>9</strong> <br>
+            b&#41; 2, 4, 8, 16, 32, 64, <strong>128</strong><br>
+            c&#41; 0, 1, 4, 9, 16, 25, 36, <strong>49</strong><br>
+            d&#41; 4, 16, 36, 64, <strong>100</strong><br>
+            e&#41; 1, 1, 2, 3, 5, 8, <strong>13</strong><br>
+            f&#41; 2, 10, 12, 16, 17, 18, 19, <strong>200</strong>
+          </p>            
+        </div>
+      </section>
+
+      <section class="questao-04">    
+        <div class="pergunta04">                   
+          <h2 class="pergunta04__titulo">Questão 04</h2>              
+          <p class="pergunta04__texto">
+            Dois veículos (um carro e um caminhão) saem<br>
+            respectivamente de cidades opostas pela<br>
+            mesma rodovia.<br><br>
+            O carro de Ribeirão Preto em direção a Franca,<br>
+            a uma velocidade constante de 110 km/h e o<br>
+            caminhão de Franca em direção a Ribeirão<br>
+            Preto a uma velocidade constante de 80 km/h.<br><br>
+
+            Quando eles se cruzarem na rodovia, qual estará<br>
+            mais próximo a cidade de Ribeirão Preto?<br><br>
+
+            IMPORTANTE:<br><br>
+
+            a&#41; Considerar a distância de 100km entre a cidade<br>
+            de Ribeirão Preto 	&lt;&#45;&gt; Franca;<br><br>
+
+            b&#41; Considerar 2 pedágios como obstáculo e que<br>
+            o caminhão leva 5 minutos a mais para passar<br>
+            em cada um deles e o carro possui tag de<br>
+            pedágio (Sem Parar);<br><br>
+
+            c&#41; Explique como chegou no resultado.
+          </p>
+            
+        </div>
+
+        <img class="separador4" src="./assets/Line-2.svg" alt="separador">
+  
+         <div class="resposta04">
+            <div class="resposta04__conteudo">
+                <h2 class="resposta04__titulo">RESPOSTA</h2>
+                <p class="resposta04__final">
+                  O cálculo foi realizando utilizando Ribeirão Preto como<br>
+                  referência. Calculei o tempo de viagem do caminhão<br>
+                  sem obstáculos, em seguida somei ao tempo que o <br>
+                  caminhão fica parado nos pedágios e calculei sua<br>
+                  velocidade média:<br>
+                </p>
+                <img src="./assets/equação_01.jpeg" alt="equação-01">
+                <p class="resposta04__final">
+                  No final basta igualar as equações do caminhão e do<br>
+                  carro, remover o tempo e encontrar o ponto de<br>
+                   cruzamento dos dois veículos:<br>
+                </p>
+                <img src="./assets/equação_02.jpeg" alt="equação-02">
+            </div>
+        </div>
+      </section>
+
+      <section class="questao-05">    
+        <div class="pergunta05">          
+          <h2 class="pergunta05__titulo">Questão 05</h2>              
+          <p class="pergunta05__texto">
+            Escreva um programa que inverta os caracteres de<br>
+            um string.<br><br>
+
+            <strong>IMPORTANTE:</strong> <br><br>
+
+            a&#41; Essa string pode ser informada através de qualquer<br>
+            entrada de sua preferência ou pode ser previamente<br>
+            definida no código;<br><br>
+
+            b&#41; Evite usar funções prontas, como, por exemplo,<br>
+            reverse.
+          </p>
+            
+        </div>
+
+        <img class="separador5" src="./assets/Line-3.svg" alt="separador">
+        
+        <div class="resposta05">            
+          <h2 class="resposta05__titulo">RESPOSTA</h2>
+          <p class="resposta05__final">
+            Código feito através do Javascript. Verificar no<br>
+            arquivo do programa, caso queira testar, siga os<br>
+            passos:<br><br>
+
+            1. Informe a frase que deseja inverter no<br>
+               "console.log(quest06(“Informe sua frase aqui”))".<br><br>
+                  
+            2. Abra a page principal “index.html”, pressione F12,<br>
+               clique na guia de console e veja o resultado.<br><br>
+
+            <strong>Segue exemplo abaixo:</strong>
+          </p>
+          <img class="code5" src="./assets/code-questao-05 .png" alt="resolução da questão 05">            
+        </div>
+      </section>     
+      <footer class="rodape">
+        <div class="language":>
+          <img src="./icon/html-icon.svg" alt="Tecnologia utilizada - HTML">
+          <img src="./icon/css-icon.svg" alt="Tecnologia utilizada - CSS">
+          <img src="./icon/js-icon.svg" alt="Tecnologia utilizada - JS">
+        </div>
+        <div class="social">
+          <p>KEVIN BAZILIO FERREIRA</p>
+          <a href="https://github.com/Disckevin" target="_blank"><img src="./icon/github-icon.svg" alt="Link do GitHub"></a>
+          <a href="https://www.linkedin.com/in/kevin-bazilio-ferreira-b019881a2/" target="_blank"><img src="./icon/linkedin-icon.svg" alt="Link do Linked"></a>
+        </div>
+      </footer>
+    </main>
+    
+  </body>
+</html>
